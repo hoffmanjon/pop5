@@ -12,7 +12,8 @@ print(21.squared())
 extension  Double  {
     func  currencyString()  ->  String  {
         let  divisor  =  pow(10.0,  2.0)
-        let  num  =  (self  *  divisor).rounded()  /  divisor return  "$\(num)"
+        let  num  =  (self  *  divisor).rounded()  /  divisor
+        return  "$\(num)"
     }
 }
 

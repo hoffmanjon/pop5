@@ -22,7 +22,8 @@ struct  Flight  {
 struct  FlightBooking  {
     static  func  getFlightNameForDates(to:  NSDate,  from:  NSDate)  -> [Flight]?  {
         let  flights  =  [Flight]()
-        //logic  to  get  flights return  flights
+        //logic  to  get  flights
+        return  flights
     }
     
     static  func  bookFlight(flight:  Flight)  {
@@ -36,8 +37,9 @@ struct  FlightBooking  {
     
     struct  RentalCarBooking  {
         static  func  getRentalCarNameForDates(to:  NSDate,  from:  NSDate) ->  [RentalCar]?  {
-                let  cars  =  [RentalCar]()
-                //logic  to  get  flights return  cars
+            let  cars  =  [RentalCar]()
+                //logic  to  get  flights
+            return  cars
         }
         
         static  func  bookRentalCar(rentalCar:  RentalCar)  {
@@ -48,7 +50,9 @@ struct  FlightBooking  {
 
 struct  TravelFacade  {
     
-    var  hotels:  [Hotel]? var  flights:  [Flight]? var  cars:  [RentalCar]?
+    var  hotels:  [Hotel]?
+    var  flights:  [Flight]?
+    var  cars:  [RentalCar]?
     
     init(to:  NSDate,  from:  NSDate)  {
         hotels  =  HotelBooking.getHotelNameForDates(to:  to,  from:  from)
